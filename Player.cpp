@@ -8,9 +8,9 @@ using namespace std;
         Player::Player(){}
         
         //set's the player's name
-        void Player::setName(){
-            
-            cout << "Please enter a name for the player:" << endl;
+        void Player::setName(int player_num){
+            system("clear");
+            cout << "Please enter a name for player " + to_string(player_num) + ": " << endl;
             cin >> playerName; 
             cout << "" << endl; 
         }
@@ -25,14 +25,14 @@ using namespace std;
         
         
         //set's the player's gender 
-        void Player::setGender(){
+        void Player::setGender(int player_num){
             
             //state of while loop 
             int state = 0; 
             
             //while loop which obtains gender of player
             while (!state) { 
-                cout << "Please enter the gender for the player." << endl;
+                cout << "Please enter the gender for player " + to_string(player_num) + ": " << endl;
                 cout << "'M' for male | 'F' for female" << endl; 
                 cin >> playerGender; 
                 cout << "" << endl;
@@ -43,6 +43,7 @@ using namespace std;
                     cout << "" << endl;
                     continue; 
                 } else {
+                    system("clear"); 
                     state = 1; //stops and exits the while loop 
                 }
             } 

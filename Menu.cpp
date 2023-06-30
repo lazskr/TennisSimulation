@@ -64,9 +64,8 @@ using namespace std;
         players = new Player[2]; 
         
             for (int i = 0; i<2; i++) { //1 for loop for a singles match 
-                cout << "Player " << i+1 << ":" << endl;
-                    players[i].setName(); 
-                    players[i].setGender(); 
+                    players[i].setName(i+1); 
+                    players[i].setGender(i+1); 
             }
         
     }

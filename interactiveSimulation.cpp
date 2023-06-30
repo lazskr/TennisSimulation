@@ -12,7 +12,6 @@ using namespace std;
 
 //default constructor
 interactiveSimulation::interactiveSimulation(){}
-
 //user decides the number of sets and the number of games to win 
     void interactiveSimulation::match_parameters(){
 

@@ -13,11 +13,11 @@ public:
         Player(); 
         
         //setter and getter for the player/s name
-        void setName();
+        void setName(int player_num);
         std::string getName(); 
         
         //setter for the player/s gender
-        void setGender();
+        void setGender(int player_num);
         char getGender(); 
         
   

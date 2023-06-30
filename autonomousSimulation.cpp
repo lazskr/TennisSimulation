@@ -279,7 +279,7 @@ using namespace std;
 
         system("clear");
         
-        cout << "What tournament are the 2 atheletes competing in?" << endl;
+        cout << "What tournament are the 2 athletes competing in?" << endl;
         cout << "The choices are: Australian Open, Roland Garros (French Open), Wimbeldon, US Open or an ATP masters." << endl; 
         cout << "Please enter AO for Australian Open, RO for Roland Garros, WD for Wimbeldon, US for US Open or ATP for" << endl; 
         cout << "an ATP masters tournament." << endl; 
@@ -287,7 +287,7 @@ using namespace std;
 
         while (!(tournament == "AO" || tournament == "RO" || tournament == "WD" || tournament == "US" || tournament == "ATP")) {
             system("clear");
-            cout << "What tournament are the 2 atheletes competing in?" << endl;
+            cout << "What tournament are the 2 athletes competing in?" << endl;
             cout << "The choices are: Australian Open, Roland Garros (French Open), Wimbeldon, US Open or an ATP masters." << endl; 
             cout << "Please enter AO for Australian Open, RO for Roland Garros, W for Wimbeldon, US for US Open or ATP for" << endl; 
             cout << "an ATP masters tournament." << endl; 
@@ -312,27 +312,26 @@ using namespace std;
 
      }
 
-    void autonomousSimulation::set_probabilty(){ //THIS FUNCTION WILL NEED TO BE CHANGED ONCE PYTHON SCRIPT IS DONE
+    void autonomousSimulation::set_probabilty(){ 
             system("clear");
 
-            if (probability1 == 0 && probability2 == 0 || probability1 == 1 && probability2 == 1) {
-                cout << "Probabilities cannot be 0 and 0 or 1 and 1." << endl;
-                cout << "" << endl; 
-             }
-
+            cout << "Both players cannot have probabilities of 0\% and 0\% or 100\% and 100\%." << endl;
+            cout << "If this is the case, the probabilities will have to be re-entered to obtain valid probabilities." << endl; 
+            cout << "" << endl; 
 
             int state_prob1 = 0;
             while (!state_prob1) {
-                cout << "What is " << athlete[0].getName() << "'s total points won (decimal form)?" << endl;
-                cout << "The value must be between 0 and 1 inclusive." << endl; 
+                cout << "What is " << athlete[0].getName() << "'s total points won (as a percentage %)?" << endl;
+                cout << "The value must be between 0 and 100 inclusive." << endl; 
                 cin >> probability1;
 
-                if (probability1 < 0 || probability1 > 1) {
+                if (probability1 < 0 || probability1 > 100) {
                     system("clear");
-                    cout << "Invalid value entered. Valid inputs are between 0 and 1 inclusive. Try again." << endl;
+                    cout << "Invalid value entered. Valid inputs are between 0\% and 100\% inclusive. Try again." << endl;
                     continue;
                 } else {
                     system("clear");
+                    probability1 /= 100;
                     state_prob1 = 1;
                 }
 
@@ -340,23 +339,23 @@ using namespace std;
 
               int state_prob2 = 0;
               while (!state_prob2) {
-                cout << "What is " << athlete[1].getName() << "'s total points won (decimal form)?" << endl;
-                cout << "The value must be between 0 and 1 inclusive." << endl;
+                cout << "What is " << athlete[1].getName() << "'s total points won (as a percentage %)?" << endl;
+                cout << "The value must be between 0 and 100 inclusive." << endl;
                 cin >> probability2;
 
-                if (probability2 < 0 || probability2 > 1) {
+                if (probability2 < 0 || probability2 > 100) {
                     system("clear");
-                    cout << "Invalid 1st or 2nd serve return points. Valid inputs are between 0 and 1 inclusive. Try again." << endl;
+                    cout << "Invalid 1st or 2nd serve return points. Valid inputs are between 0\% and 100\% inclusive. Try again." << endl;
                     continue;
                 } else {
                     system("clear");
+                    probability2 /= 100;
                     state_prob2 = 1;
                 }
 
              }
 
              if (probability1 == 0 && probability2 == 0 || probability1 == 1 && probability2 == 1) {
-                cout << "Probabilities cannot be 0 and 0 or 1 and 1." << endl;
                 cout << "" << endl; 
                 set_probabilty(); 
              }

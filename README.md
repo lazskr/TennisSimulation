@@ -8,7 +8,7 @@ Step 1: run "g++ -std=c++11 -O2 -Wall -o execute Main.cpp Menu.cpp Player.cpp Si
 
 Step 2: run "./execute" in the terminal to begin the program  
 
-**NOTE:** For the autonomous simulation, please refer to https://www.atptour.com/en/players to get the neccessary statistic (total points won) for the autonomous simulation to run. Please use a decimal representation of the value by simply dividing total points won by 100. 
+**NOTE:** For the autonomous simulation, please refer to https://www.atptour.com/en/players to get the statistic called total points won (which is represented as a percentage %) for each player as the autonomous simulation relies on this piece of information. 
 
 # Motivation behind this project: 
 This project was created to exemplify Objected Oriented Programming in C++. Specifically, the four pillars of Object-Oriented Programming can be identified within this project which are: Abstraction, Inheritance, Polymorphism and Encapsulation.

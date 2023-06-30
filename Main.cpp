@@ -6,7 +6,7 @@ using namespace std;
 #include "autonomousSimulation.h"
 #include "Simulation.h"
 
-//g++ -std=c++11 Player.cpp Menu.cpp Simulation.cpp interactiveSimulation.cpp autonomousSimulation.cpp main.cpp -o f
+//g++ -std=c++11 Player.cpp Menu.cpp Simulation.cpp interactiveSimulation.cpp autonomousSimulation.cpp main.cpp -o execute
 
 int main(){
 
