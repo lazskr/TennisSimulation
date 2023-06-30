@@ -5,7 +5,9 @@ The Tennis Simulation enables for users to simulate singles Tennis Matches for a
 
 # How to execute and run the Tennis Simulation? 
 Step 1: run "g++ -std=c++11 -O2 -Wall -o execute Main.cpp Menu.cpp Player.cpp Simulation.cpp autonomousSimulation.cpp interactiveSimulation.cpp" in the terminal 
+
 Step 2: run "./execute" in the terminal to begin the program  
+
 for Step 1, please refer to https://www.atptour.com/en/players to get the neccessary statistic (total points won) for the simulation to run. Please use a decimal 
 representation of the value by simply dividing total points won by 100. 
 
