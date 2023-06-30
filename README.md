@@ -1,14 +1,14 @@
 # TENNIS SIMULATION 
 
 # What is the project's purpose? 
-Firstly, the Tennis Simulation enables for users to simulate singles Tennis Matches for any tournament (ATP or Grand Slam) for any professional players and allows them to perform experimental repetition to to acquire an overall average winner (autonomous simulation). The Tennis Simulation program also allows the users to simulate a match where it is a text-based statistics-driven game where the user "controls" 1 player and they must make choices throughout the game which will either hinder or increase their player's probability of wininng the match (interactive simultation). This project was written in C++. 
+Firstly, the Tennis Simulation enables for users to simulate singles Tennis Matches for any tournament (ATP or Grand Slam) for any professional players and allows them to perform experimental repetition to to acquire an overall average winner (**autonomous simulation**). The Tennis Simulation program also allows the users to simulate a match where it is a text-based statistics-driven game where the user "controls" 1 player and they must make choices throughout the game which will either hinder or increase their player's probability of wininng the match (**interactive simultation**). This project was written in C++. 
 
 # How to execute and run the Tennis Simulation? 
 Step 1: run "g++ -std=c++11 -O2 -Wall -o execute Main.cpp Menu.cpp Player.cpp Simulation.cpp autonomousSimulation.cpp interactiveSimulation.cpp" in the terminal 
 
 Step 2: run "./execute" in the terminal to begin the program  
 
-NOTE: For the autonomous simulation, please refer to https://www.atptour.com/en/players to get the neccessary statistic (total points won) for the autonomous simulation to run. Please use a decimal representation of the value by simply dividing total points won by 100. 
+**NOTE:** For the autonomous simulation, please refer to https://www.atptour.com/en/players to get the neccessary statistic (total points won) for the autonomous simulation to run. Please use a decimal representation of the value by simply dividing total points won by 100. 
 
 # Motivation behind this project: 
 This project was created to exemplify Objected Oriented Programming in C++. Specifically, the four pillars of Object-Oriented Programming can be identified within this project which are: Abstraction, Inheritance, Polymorphism and Encapsulation.
